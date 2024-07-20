@@ -1,0 +1,168 @@
+:root {
+    /* Colors */
+    --background-color: #000000; /* Black */
+    --text-color-primary: #FFFFFF; /* White */
+    --button-background: #333333; /* Dark Gray for buttons */
+    --button-hover-background: #444444; /* Slightly lighter dark gray */
+    --card-background: #1A1A1A; /* Very dark gray for cards */
+  
+    /* Font Sizes */
+    --font-size-large: 24px; /* For titles */
+    --font-size-medium: 18px; /* For subtitles or important text */
+    --font-size-regular: 16px; /* For regular text */
+    --font-size-small: 14px; /* For less important text */
+    --font-size-xsmall: 12px; /* For minor details */
+  
+    /* Font Families */
+    --font-family-primary: 'Helvetica Neue', Arial, sans-serif;
+    --font-family-secondary: 'Roboto', sans-serif;
+}
+
+/* basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--background-color);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 70px;
+}
+
+.main-content {
+    flex: 1 0 auto;
+}
+
+.main-section{
+    width: 100%;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 1)), url('https://i2.wp.com/www.themoviedb.org/t/p/original/u7fhZU4AxYRpjvy05BxoR1d5kDi.jpg');
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+.header-main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 48px 36px;
+}
+.profile-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+}
+.search-container{
+    display: inline-block;
+}
+
+.search-btn{
+    background-color: rgba(51, 51, 51, 0.9) ;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50px;
+    color: var(--text-color-primary);
+    height: 40px;
+    width: 40px;
+}
+.search-icon {
+    width: 20px;
+    height: 20px;
+}
+.btn-pl-det{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:24px;
+
+}
+.title-trending-mov,.title-trending-TV{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.trending-movieimg,.trending-tvimg{
+    width: 124px;
+    height: 176px;
+    border-radius: 12px;
+    margin: 16px 0;
+}
+
+.btn-play,.btn-det{
+    border: none;
+    font-size: var(--font-size-regular);
+    font-family: var(--font-family-secondary);
+    color: var(--text-color-primary);
+    border: 1px solid var(--text-color-primary);
+    margin: 0 0 0 12px;
+    width: 84px;
+    height: 30px;
+    border-radius: 36px;
+}
+
+.btn-play,.btn-det:hover{
+    background-color: var(--button-hover-background);
+}
+
+.btn-play{
+    background-color: rgba(51, 51, 51, 0.9);
+    border: none;
+}
+.btn-det{
+    background-color: var(--background-color);
+    border: 1px solid white;
+
+}
+.trending-movies,.trending-TV{
+    font-family: var(--font-family-primary);
+    color: var(--text-color-primary);
+    margin: 18px 36px;
+}
+
+.trending-movietitle,.trending-tvtitle{
+    font-size: var(--font-size-large);
+}
+.trending-moviep,.trending-tvp{
+    font-size: var(--font-size-small);
+    color:rgba(51, 51, 51, 0.9);
+    font-weight: bold;
+    font-family: var(--font-family-secondary);
+}
+.trending-moviename,.trending-tvname{
+    font-size: var(--font-size-xsmall);
+}
+.app-footer {
+    background-color: rgba(51, 51, 51, 0.9); /* Ajusta los valores de rgba según el color y la opacidad deseada */
+    height: 70px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed; /* Hace que el footer permanezca fijo en la pantalla */
+    bottom: 0; /* Lo coloca en la parte inferior de la pantalla */
+    left: 0; /* Se asegura de que esté alineado a la izquierda */
+    z-index: 1000; /* Asegura que el footer esté por encima de otros elementos */
+}
+
+
+.footer-icons{
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.footer-icons a {
+    color: var(--text-color-primary);
+}
+
+
+  
