@@ -43,10 +43,11 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 1)), url('https://i2.wp.com/www.themoviedb.org/t/p/original/u7fhZU4AxYRpjvy05BxoR1d5kDi.jpg');
-    background-size: 100% 100%;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 40%, rgba(0, 0, 0, 1)), url('');
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    transition: background-image 0.5s ease-in-out;
 }
 
 .header-main{
@@ -116,16 +117,23 @@ body{
     align-items: center;
     margin: 12px 36px;
 }
-.trend-section-title{
+.trend-section-movietitle,.trend-section-tvtitle{
     font-size: var(--font-size-medium);
 }
-.trending-movieimg,.trending-tvimg{
+.trending-movieimg,.trending-tvS-img{
     width: 124px;
     height: 176px;
     border-radius: 12px;
     margin: 16px 0;
 }
 .trending-cards-movies{
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 12px;
+}
+.trending-cards-TV{
     display: flex;
     width: 100%;
     overflow-x: auto;
@@ -143,12 +151,7 @@ body{
     color: var(--text-color-primary);
     font-family: var(--font-family-primary);
 }
-.trending-moviep,.trending-tvp{
-    font-size: var(--font-size-small);
-    color:rgba(51, 51, 51, 0.9);
-    font-weight: bold;
-    font-family: var(--font-family-secondary);
-}
+
 .trending-moviename,.trending-tvname{
     font-size: var(--font-size-xsmall);
 }
