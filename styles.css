@@ -85,18 +85,6 @@ body{
     gap:24px;
 
 }
-.title-trending-mov,.title-trending-TV{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.trending-movieimg,.trending-tvimg{
-    width: 124px;
-    height: 176px;
-    border-radius: 12px;
-    margin: 16px 0;
-}
-
 .btn-play,.btn-det{
     border: none;
     font-size: var(--font-size-regular);
@@ -122,6 +110,28 @@ body{
     border: 1px solid white;
 
 }
+.title-trending{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 12px 36px;
+}
+.trend-section-title{
+    font-size: var(--font-size-medium);
+}
+.trending-movieimg,.trending-tvimg{
+    width: 124px;
+    height: 176px;
+    border-radius: 12px;
+    margin: 16px 0;
+}
+.trending-cards-movies{
+    display: flex;
+    width: 100%;
+    overflow-x: auto;
+    white-space: nowrap;
+    gap: 12px;
+}
 .trending-movies,.trending-TV{
     font-family: var(--font-family-primary);
     color: var(--text-color-primary);
@@ -130,6 +140,8 @@ body{
 
 .trending-movietitle,.trending-tvtitle{
     font-size: var(--font-size-large);
+    color: var(--text-color-primary);
+    font-family: var(--font-family-primary);
 }
 .trending-moviep,.trending-tvp{
     font-size: var(--font-size-small);
